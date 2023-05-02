@@ -1,0 +1,157 @@
+
+.App {
+  text-align: center;
+  
+  
+}
+
+.titulo{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #efefef;
+  
+}
+
+
+.containerCalculadora{
+  width: 250px;
+  height: 420px;
+  background-color: rgb(56, 54, 54);
+  margin: 8px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+
+}
+
+.tela{
+  width: 90%;
+  height: 60px;
+  border: 1px solid black;
+  margin: 20px auto;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.tela p{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  overflow: auto;
+  
+}
+.containerTeclado{
+  width: 250px;
+  height: auto;
+  margin: 5px auto;
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.teclaOperacao{
+  width: 55px;
+  height: 55px;
+  background-color: rgb(11, 11, 65);
+  margin: 2px 2px;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+  border: 1px solid black;
+  
+}
+
+.teclaOperacao svg{
+  margin: auto auto;
+  color: #efefef;
+}
+
+
+.operacoes{
+  display: flex;
+}
+
+
+.teclado{
+  width: 236px;
+  display: block;
+  
+
+
+}
+.tecladoNumerico{
+  width: 180px;
+  height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+}
+
+.teclaNumerica{
+  width: 55px;
+  height: 55px;
+  border: 0.5px solid black;
+  margin: 1px 1px;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+  background-color: #111111;
+}
+
+.teclaNumerica svg{
+  margin: auto auto;
+  color: #efefef;
+}
+
+.zero{
+  width: 114px;
+}
+
+.acoes{
+margin-left: auto;
+width:60px;
+height: 30px;
+margin-top: -30px;
+}
+
+.teclaAcao{
+  width: 55px;
+  height: 55px;
+  background-color: #efefef;
+  margin: 2px 2px;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.teclaAcao svg{
+  margin: auto auto;
+}
+
+.igual{
+  margin: 6px 2px;
+  width: 55px;
+  height: 114px;
+}
+
+.igual{
+  margin: 6px 2px;
+  width: 55px;
+  height: 114px;
+}
+
+
+.teclaOperacao:hover{
+  background-color: rgb(27, 27, 150);
+}
+
+.teclaAcao:hover{
+  background-color: #b1b1b1;
+}
+.teclaNumerica:hover{
+  background-color: #2b2a2a;
+}
+
+

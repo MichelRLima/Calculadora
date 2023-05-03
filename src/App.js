@@ -131,12 +131,12 @@ function clicmais(){
   setVmult(false)
   setVdiv(false)
   
-  setCalc(calc+"+")
+  setCalc(calc+" + ")
 }
 
 function clicmenos (){
  
-  setCalc(calc+"-")
+  setCalc(calc+" - ")
   setVponto(false)
   setVmais(false)
   setVmenos(false)
@@ -150,7 +150,7 @@ function clicdiv (){
   setVmenos(false)
   setVmult(false)
   setVdiv(false)
-  setCalc(calc+"/")
+  setCalc(calc+" / ")
 }
 function clicmult (){
   setCalc(calc+"-")
@@ -159,7 +159,7 @@ function clicmult (){
   setVmenos(false)
   setVmult(false)
   setVdiv(false)
-  setCalc(calc+"*")
+  setCalc(calc+" * ")
 }
 
 function clicigual (){
@@ -193,8 +193,8 @@ function clicclear (){
 
       <div className="containerCalculadora">
         <div className="tela">
-          <p>{calc}</p>
-          <p>{resp}</p>
+          <p>{calc}{resp}</p>
+          
 
         </div>
 

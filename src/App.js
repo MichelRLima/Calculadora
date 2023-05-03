@@ -194,7 +194,6 @@ function clicclear (){
       <div className="containerCalculadora">
         <div className="tela">
           <p>{calc}{resp}</p>
-          
 
         </div>
 

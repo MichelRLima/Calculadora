@@ -36,7 +36,7 @@
 
 .tela p{
   font-family: 'Orbitron', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
   overflow: auto;
@@ -120,7 +120,7 @@ margin-top: -30px;
   width: 55px;
   height: 55px;
   background-color: #efefef;
-  margin: 2px 2px;
+  margin: 2px 6px;
   border-radius: 10px;
   display: flex;
   cursor: pointer;
@@ -130,14 +130,10 @@ margin-top: -30px;
   margin: auto auto;
 }
 
-.igual{
-  margin: 6px 2px;
-  width: 55px;
-  height: 114px;
-}
+
 
 .igual{
-  margin: 6px 2px;
+  margin: 6px 6px;
   width: 55px;
   height: 114px;
 }

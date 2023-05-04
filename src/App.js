@@ -6,7 +6,7 @@ import { RiNumber0,RiNumber1, RiNumber2, RiNumber3, RiNumber4,
    RiAddLine,RiDivideLine, RiSingleQuotesR, RiArrowLeftSLine, RiCloseFill} from 'react-icons/ri';
 import {TbLetterC} from 'react-icons/tb'
 import {FaEquals} from 'react-icons/fa'
-
+import Titulo from './Titulo';
 function App() {
 
   const [vponto, setVponto] = useState(false);
@@ -260,6 +260,7 @@ function clicclear (){
 
 
       </div>
+      <Titulo />
     </div>
   );
 }

@@ -10,7 +10,7 @@ import {FaEquals} from 'react-icons/fa'
 function App() {
 
   const [vponto, setVponto] = useState(false);
-  const [vmais, setVmais] = useState(false);
+  const [vmais, setVmais] = useState(true);
   const [vmenos, setVmenos] = useState(true);
   const [vmult, setVmult] = useState(false);
   const [vdiv, setVdiv] = useState(false);
@@ -130,7 +130,7 @@ function clicmais(){
   setVmenos(false)
   setVmult(false)
   setVdiv(false)
-  
+  setResp("")
   setCalc(calc+" + ")
 }
 
@@ -142,6 +142,7 @@ function clicmenos (){
   setVmenos(false)
   setVmult(false)
   setVdiv(false)
+  setResp("")
 }
 function clicdiv (){
   setCalc(calc+"-")
@@ -163,14 +164,25 @@ function clicmult (){
 }
 
 function clicigual (){
+if (calc === " + " || calc === " - "){
+  setCalc("")
+  console.log("entrou")
+  setVponto(false)
+  setVmais(true)
+  setVmenos(true)
+  setVmult(false)
+  setVdiv(false)
+}else{
   setCalc("")
   setResp(parseFloat(evaluate(calc))) //usando a funcao evaluate para converter a string para um calculo
   setVponto(false)
-  setVmais(false)
-  setVmenos(false)
+  setVmais(true)
+  setVmenos(true)
   setVmult(false)
   setVdiv(false)
+  console.log(calc)
   
+}
 }
 function clicapagar (){
   setCalc(calc.slice(0, -1));
@@ -179,8 +191,8 @@ function clicapagar (){
 function clicclear (){
   setCalc("")
   setVponto(false)
-  setVmais(false)
-  setVmenos(false)
+  setVmais(true)
+  setVmenos(true)
   setVmult(false)
   setVdiv(false)
   setResp("")

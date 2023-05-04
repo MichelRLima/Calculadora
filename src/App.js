@@ -166,7 +166,7 @@ function clicmult (){
 function clicigual (){
 if (calc === " + " || calc === " - " || calc.endsWith("+ ") || calc.endsWith("- ") || calc.endsWith("* ") || calc.endsWith("/ ")){
   setCalc("")
-  console.log("entrou")
+
   setVponto(false)
   setVmais(true)
   setVmenos(true)

@@ -27,7 +27,7 @@ function clic1 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"1")
-  setResp("")
+
 }
 function clic2 (){
   setVponto(true)
@@ -36,7 +36,7 @@ function clic2 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"2")
-  setResp("")
+
 }
 function clic3 (){
   setVponto(true)
@@ -45,7 +45,7 @@ function clic3 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"3")
-  setResp("")
+
 }
 function clic4 (){
   setVponto(true)
@@ -54,7 +54,7 @@ function clic4 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"4")
-  setResp("")
+
 }
 function clic5 (){
   setVponto(true)
@@ -63,7 +63,7 @@ function clic5 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"5")
-  setResp("")
+
 }
 function clic6 (){
   setVponto(true)
@@ -72,7 +72,7 @@ function clic6 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"6")
-  setResp("")
+
 }
 function clic7 (){
   setVponto(true)
@@ -81,7 +81,7 @@ function clic7 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"7")
-  setResp("")
+
 }
 function clic8 (){
   setVponto(true)
@@ -90,7 +90,7 @@ function clic8 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"8")
-  setResp("")
+
   
 }
 function clic9 (){
@@ -100,7 +100,7 @@ function clic9 (){
   setVmult(true)
   setVdiv(true)
   setCalc(calc+"9")
-  setResp("")
+
 }
 function clic0 (){
   setVponto(true)
@@ -110,7 +110,7 @@ function clic0 (){
   setVdiv(true)
   
   setCalc(calc+"0")
-  setResp("")
+
   
 }
 function clicp (){
@@ -130,7 +130,7 @@ function clicmais(){
   setVmenos(false)
   setVmult(false)
   setVdiv(false)
-  setResp("")
+
   setCalc(calc+" + ")
 }
 
@@ -142,10 +142,10 @@ function clicmenos (){
   setVmenos(false)
   setVmult(false)
   setVdiv(false)
-  setResp("")
+
 }
 function clicdiv (){
-  setCalc(calc+"-")
+
   setVponto(false)
   setVmais(false)
   setVmenos(false)
@@ -154,7 +154,7 @@ function clicdiv (){
   setCalc(calc+" / ")
 }
 function clicmult (){
-  setCalc(calc+"-")
+
   setVponto(false)
   setVmais(false)
   setVmenos(false)
@@ -173,13 +173,14 @@ if (calc === " + " || calc === " - " || calc.endsWith("+ ") || calc.endsWith("- 
   setVmult(false)
   setVdiv(false)
 }else{
+  var resultado = resp+calc
   setCalc("")
-  setResp(parseFloat(evaluate(calc))) //usando a funcao evaluate para converter a string para um calculo
+  setResp(parseFloat(evaluate(resultado))) //usando a funcao evaluate para converter a string para um calculo
   setVponto(false)
   setVmais(true)
   setVmenos(true)
-  setVmult(false)
-  setVdiv(false)
+  setVmult(true)
+  setVdiv(true)
   console.log(calc)
   
 }
@@ -205,7 +206,7 @@ function clicclear (){
 
       <div className="containerCalculadora">
         <div className="tela">
-          <p>{calc}{resp}</p>
+          <p>{resp}{calc}</p>
 
         </div>
 
